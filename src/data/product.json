@@ -1,0 +1,154 @@
+[
+  {
+    "id": "hot-americano",
+    "displayName": "Americano",
+    "type": "hot",
+    "price": 2500,
+    "description": "A classic hot coffee made with a shot of espresso and hot water.",
+    "image": "/images/coffee/hot-americano.jpeg"
+  },
+  {
+    "id": "hot-cappuccino",
+    "displayName": "Cappuccino",
+    "type": "hot",
+    "price": 3000,
+    "description": "A rich and frothy coffee with equal parts of espresso, steamed milk, and foam.",
+    "image": "/images/coffee/hot-cappuccino.jpeg"
+  },
+  {
+    "id": "hot-caramel-macchiato",
+    "displayName": "Caramel Macchiato",
+    "type": "hot",
+    "price": 3500,
+    "description": "Velvety espresso and steamed milk topped with a decadent caramel drizzle.",
+    "image": "/images/coffee/hot-caramel-macchiato.jpg"
+  },
+  {
+    "id": "hot-chocolate",
+    "displayName": "Chocolate",
+    "type": "hot",
+    "price": 3500,
+    "description": "Creamy and indulgent hot chocolate, perfect for chocolate lovers.",
+    "image": "/images/coffee/hot-chocolate.jpg"
+  },
+  {
+    "id": "hot-espresso",
+    "displayName": "Espresso",
+    "type": "hot",
+    "price": 2000,
+    "description": "A bold and intense shot of espresso, a true coffee enthusiast's choice.",
+    "image": "/images/coffee/hot-espresso.jpeg"
+  },
+  {
+    "id": "hot-fiter-coffee",
+    "displayName": "Fiter Coffee",
+    "type": "hot",
+    "price": 3000,
+    "description": "A bold and smooth brew of premium coffee beans using the traditional filter method.",
+    "image": "/images/coffee/hot-fiter-coffee.jpeg"
+  },
+  {
+    "id": "hot-flat-white",
+    "displayName": "Flat White",
+    "type": "hot",
+    "price": 3500,
+    "description": "A velvety coffee with espresso and microfoam, for a smooth and balanced flavor.",
+    "image": "/images/coffee/hot-flat-white.jpg"
+  },
+  {
+    "id": "hot-latte",
+    "displayName": "Latte",
+    "type": "hot",
+    "price": 3000,
+    "description": "Espresso mixed with steamed milk, delivering a mellow and creamy taste.",
+    "image": "/images/coffee/hot-latte.jpeg"
+  },
+  {
+    "id": "hot-matcha-latte",
+    "displayName": "Matcha Latte",
+    "type": "hot",
+    "price": 4000,
+    "description": "A comforting blend of matcha green tea and steamed milk for a unique and soothing experience.",
+    "image": "/images/coffee/hot-matcha-latte.jpeg"
+  },
+  {
+    "id": "hot-mocha",
+    "displayName": "Mocha",
+    "type": "hot",
+    "price": 4000,
+    "description": "Espresso combined with rich chocolate and steamed milk, a delightful chocolatey coffee treat.",
+    "image": "/images/coffee/hot-mocha.jpeg"
+  },
+  {
+    "id": "iced-americano",
+    "displayName": "Iced Americano",
+    "type": "iced",
+    "price": 3000,
+    "description": "Chilled coffee made by diluting espresso with cold water, served over ice.",
+    "image": "/images/coffee/iced-americano.jpeg"
+  },
+  {
+    "id": "iced-cappuccino",
+    "displayName": "Iced Cappuccino",
+    "type": "iced",
+    "price": 3500,
+    "description": "A refreshing iced version of the classic cappuccino with espresso, cold milk, and foam.",
+    "image": "/images/coffee/iced-cappuccino.jpg"
+  },
+  {
+    "id": "iced-caramel-macchiato",
+    "displayName": "Iced Caramel Macchiato",
+    "type": "iced",
+    "price": 3500,
+    "description": "Cool espresso over ice, blended with cold milk, and finished with a swirl of caramel.",
+    "image": "/images/coffee/iced-caramel-macchiato.jpeg"
+  },
+  {
+    "id": "iced-cold-brew-latte",
+    "displayName": "Cold Brew Latte",
+    "type": "iced",
+    "price": 4500,
+    "description": "Smooth and velvety cold brew coffee mixed with cold milk for a creamy iced latte.",
+    "image": "/images/coffee/iced-cold-brew-latte.jpeg"
+  },
+  {
+    "id": "iced-cold-brew",
+    "displayName": "Cold Brew",
+    "type": "iced",
+    "price": 3500,
+    "description": "Bold and refreshing cold brew coffee, a perfect pick-me-up on a hot day.",
+    "image": "/images/coffee/iced-cold-brew.jpeg"
+  },
+  {
+    "id": "iced-green-tea",
+    "displayName": "Iced Green Tea",
+    "type": "iced",
+    "price": 2500,
+    "description": "Iced green tea for a cool and antioxidant-packed beverage.",
+    "image": "/images/coffee/iced-green-tea.jpeg"
+  },
+  {
+    "id": "iced-latte",
+    "displayName": "Iced Latte",
+    "type": "iced",
+    "price": 3000,
+    "description": "Chilled espresso mixed with cold milk, a refreshing and energizing iced latte.",
+    "image": "/images/coffee/iced-latte.jpeg"
+  },
+  {
+    "id": "iced-matcha",
+    "displayName": "Iced Matcha",
+    "type": "iced",
+    "price": 4000,
+    "description": "Cold matcha green tea served over ice, a vibrant and revitalizing drink.",
+    "image": "/images/coffee/iced-matcha.jpeg"
+  },
+  {
+    "id": "iced-mocha",
+    "displayName": "Iced Mocha",
+    "type": "iced",
+    "price": 4000,
+    "description": "Iced coffee with a decadent blend of chocolate and espresso, a delightful cold chocolate coffee treat.",
+    "image": "/images/coffee/iced-mocha.jpeg"
+  }
+]
