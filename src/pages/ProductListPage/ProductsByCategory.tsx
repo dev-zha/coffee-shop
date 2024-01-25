@@ -11,9 +11,9 @@ export default function ProductsByCategory({
   coffees,
 }: ProductsByCategoryProps) {
   return (
-    <div className="mt-6">
+    <div className="mt-8">
       <CategoryTitle>{title}</CategoryTitle>
-      <div className="grid grid-cols gap-4">
+      <div className="grid grid-cols sm:grid-cols-2 gap-4">
         {coffees?.map((coffee) => (
           <ProductCardHorizontal key={coffee.id} coffee={coffee} />
         ))}

@@ -10,6 +10,7 @@ export default function LoginPage() {
   // Auth Provider
   const { login: loginToApp } = useAuth();
   const [isLoading, setLoading] = useState(false);
+  const [fbBtnClick, setFbBtnClick] = useState(false);
 
   const handleGLoginSuccess = async (tokenResponse: TokenResponse) => {
     setLoading(true);
@@ -41,10 +42,17 @@ export default function LoginPage() {
     onError: handleGLoginFail,
   });
 
+  const handleFaceBookLoginClick = () => {
+    setFbBtnClick(true);
+    setTimeout(() => {
+      setFbBtnClick(false);
+    }, 2000);
+  };
+
   return (
     <>
       <div className="flex flex-col items-center justify-center w-full h-screen bg-primary p-4">
-        <div className="flex flex-col w-full bg-gray bg-gray-100 rounded-3xl p-10">
+        <div className="flex flex-col w-full max-w-md bg-gray bg-gray-100 rounded-3xl p-10 mx-auto">
           <div className="flex items-center gap-3 mb-10 mx-auto">
             <img
               src="/images/app-logo.svg"
@@ -94,6 +102,7 @@ export default function LoginPage() {
             <hr />
             <button
               type="button"
+              onClick={handleFaceBookLoginClick}
               className="inline-flex items-center justify-center gap-2 w-full bg-[#3b5998] hover:bg-[#3b5998]/90 text-white text-sm font-medium border rounded-lg px-5 py-2.5 focus:outline-none focus:ring-2 focus:[#3b5998]/50"
             >
               <svg
@@ -110,6 +119,11 @@ export default function LoginPage() {
               </svg>
               Sign in with Facebook
             </button>
+            {fbBtnClick && (
+              <p className="text-red-600 text-sm font-medium text-center">
+                This feature is not implemented yet!
+              </p>
+            )}
           </div>
         </div>
       </div>

@@ -23,7 +23,13 @@ export default function ProfilePage() {
 
   return (
     <div className="flex flex-col items-center w-full py-20 px-10">
-      <img src={user?.image} alt="404 Not Found" className="w-40 rounded-full bg-gray-300 mx-auto" />
+      <div className="w-40 h-40 rounded-full bg-gray-300 mx-auto overflow-hidden">
+        <img
+          src={user?.image}
+          alt={`${user.name} Profile`}
+          className="w-full h-full object-cover"
+        />
+      </div>
       <div className="text-center mt-8">
         <Title3>{user?.name}</Title3>
         <p className="text-gray-500 mt-2">{user?.email}</p>

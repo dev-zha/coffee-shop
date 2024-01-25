@@ -11,7 +11,7 @@ export default function OrderList() {
   return (
     <>
       {!isLoading && (
-        <div className='w-full'>
+        <div className="w-full">
           {orderCount > 0 ? (
             <ul>
               {data?.map((order, index) => (
@@ -33,7 +33,7 @@ export default function OrderList() {
           )}
         </div>
       )}
-      <PageLoading show={isLoading} />;
+      <PageLoading show={isLoading} />
     </>
   );
 }

@@ -1,13 +1,13 @@
-import { APP_NAME } from "@/constants/constants";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+import { APP_NAME } from '@/constants/constants';
 
 export default function Footer() {
   return (
     <footer className="bg-white border-t mt-8">
-      <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between">
+      <div className="w-full mx-auto">
+        <div className="w-full max-w-screen-lg md:flex md:justify-between p-4 py-6 lg:py-8 mx-auto">
           <div className="mb-6 md:mb-0">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center text-primary">
               <img
                 src="/images/app-logo.svg"
                 className="h-8 me-3"
@@ -42,21 +42,21 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500">
                 <li className="mb-4">
-                  <a href="#" className="hover:underline">
+                  <Link to="/privacy-policy" className="hover:underline">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#" className="hover:underline">
+                  <Link to="/terms-and-conditions" className="hover:underline">
                     Terms &amp; Conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
-        <div className="mx-auto">
+        <hr className="my-2 border-gray-200" />
+        <div className="p-2 mx-auto">
           <p className="text-sm text-gray-500 text-center">
             {'© 2024 '}
             <Link to="/" className="hover:underline">

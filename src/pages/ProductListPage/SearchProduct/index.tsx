@@ -51,7 +51,7 @@ export default function SearchProduct() {
         onClear={handleClearInput}
       />
       {deferredKw && (
-        <div className="bg-gray-100 p-2 mt-2 rounded-lg">
+        <div className="bg-gray-200 p-3 mt-2 rounded-2xl">
           <CategoryTitle>Search Results : </CategoryTitle>
           {searchResult?.length > 0 ? (
             <SearchResults coffees={searchResult} />

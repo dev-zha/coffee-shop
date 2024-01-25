@@ -28,16 +28,16 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 bg-gray-50 border-b z-10">
-        <div className="max-w-screen-xl flex items-center justify-between mx-auto px-4 py-3">
+        <div className="max-w-screen-lg flex items-center justify-between mx-auto px-4 smd:px-0 py-3">
           <button
             onClick={handelDrawerOpen}
-            className="rounded-full text-black hover:text-primary-600 p-2 ease-in"
+            className="hover:bg-primary-50 text-black hover:text-primary-600 rounded-full p-2 ease-in"
           >
             <UserIcon className="w-6 h-6" />
           </button>
           <Link
             to="/"
-            className="flex items-center space-x-1 focus:outline-none"
+            className="flex items-center space-x-1 focus:outline-none text-primary hover:opacity-70"
           >
             <img src="/images/app-logo.svg" className="h-7" alt="App Logo" />
             <span className="self-center text-lg font-semibold whitespace-nowrap">
@@ -47,7 +47,7 @@ export default function Navbar() {
           <div className="flex flex-row items-center space-x-4 w-auto">
             <button
               onClick={handleCartClick}
-              className="relative text-black hover:text-primary-600 rounded-full p-2 ease-in"
+              className="relative hover:bg-primary-50 text-black hover:text-primary-600 rounded-full p-2 ease-in"
             >
               <ShoppingCartIcon className="w-6 h-6" />
               <span className="sr-only">Shopping Cart</span>

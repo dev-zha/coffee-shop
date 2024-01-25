@@ -3,7 +3,7 @@ import { LatLng, UserAddress } from '@/types';
 import useDebounce from '@/hooks/useDebounce';
 import { useUserAddress } from '@/hooks/useUserAddress';
 import MapComponent from '@/components/shared/MapComponent';
-import BlankModal from '../BlankModal';
+import BaseModal from '@/components/shared/modal/BaseModal';
 import StickyModalHeader from '../StickyModalHeader';
 import FlexContainer from '../FlexContainer';
 import FullHeightContainer from '../FullHeightContainer';
@@ -46,7 +46,7 @@ export default function AddressModal({ show, onClose }: AddressModalProps) {
   };
 
   return (
-    <BlankModal show={show} onClose={() => {}} fullScreen>
+    <BaseModal show={show} onClose={() => {}} fullScreen>
       <FlexContainer>
         <StickyModalHeader title="Change Address" onClose={onClose} />
         <FullHeightContainer>
@@ -55,7 +55,7 @@ export default function AddressModal({ show, onClose }: AddressModalProps) {
             onChange={setAddress}
             isLoading={isLoading}
           />
-          <div className="w-full h-80 bg-gray-300 rounded-lg overflow-hidden mt-4">
+          <div className="w-full h-80 sm:h-72 bg-gray-300 rounded-lg overflow-hidden mt-4">
             <MapComponent onCoordChange={handleCoordChange} />
           </div>
           <ControlButtons
@@ -65,6 +65,6 @@ export default function AddressModal({ show, onClose }: AddressModalProps) {
           />
         </FullHeightContainer>
       </FlexContainer>
-    </BlankModal>
+    </BaseModal>
   );
 }

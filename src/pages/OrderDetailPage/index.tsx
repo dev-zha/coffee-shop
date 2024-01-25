@@ -21,7 +21,7 @@ export default function OrderDetailPage() {
       <div className="p-4 placeholder-neutral-800">
         <Title1>Order Details</Title1>
         {data && (
-          <div className='bg-white p-4 mt-4 border border-primary-200 rounded-2xl'>
+          <div className='w-full max-w-lg bg-white p-4 mt-4 border border-primary-200 rounded-2xl mx-auto'>
             <OrderQR />
             <OrderInfos order={data} />
             <hr className="my-4" />

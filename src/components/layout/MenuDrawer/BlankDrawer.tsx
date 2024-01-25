@@ -37,7 +37,7 @@ export default function BlankDrawer({
               leaveFrom="translate-x-0"
               leaveTo="-translate-x-full"
             >
-              <Dialog.Panel className="w-3/4 transform bg-gray-50 transition-all h-screen max-h-f overflow-y-auto">
+              <Dialog.Panel className="w-3/4 sm:w-1/2 md:w-1/3 transform bg-gray-50 transition-all h-screen max-h-f overflow-y-auto">
                 {children}
               </Dialog.Panel>
             </Transition.Child>

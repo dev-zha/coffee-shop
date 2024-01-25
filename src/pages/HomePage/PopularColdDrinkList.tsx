@@ -7,7 +7,7 @@ export default function PopularColdDrinkList() {
 
   return (
     <PopularCategoryList
-      title="Popular Hot Drink"
+      title="Popular Cold Drink"
       coffees={icedCoffees?.slice(0, 4)}
     />
   );

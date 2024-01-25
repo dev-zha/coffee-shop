@@ -10,6 +10,8 @@ import OrderHistoryPage from './pages/OrderHistoryPage';
 import OrderDetailPage from './pages/OrderDetailPage';
 import LoginPage from './pages/LoginPage';
 import ProfilePage from './pages/ProfilePage';
+import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 export default function Router() {
   return (
@@ -20,6 +22,8 @@ export default function Router() {
         <Route path="/orders" element={<OrderHistoryPage />} />
         <Route path="/orders/:id" element={<OrderDetailPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         {/* 404 */}
         <Route path="*" element={<NotFoundPage />} />
       </Route>

@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import ConfirmDialog from '@/components/shared/dialog/ConfirmDialog';
+import BaseModal from '@/components/shared/modal/BaseModal';
 import { useShoppingCart } from '@/hooks/useShoppingCart';
 import { Customer, DeliOption, OrderItem } from '@/types';
 import PageLoading from '@/components/shared/PageLoading';
@@ -6,18 +10,14 @@ import Footer from './Footer';
 import DeliveryAddress from './DeliveryAddress';
 import PaymentMethodSwitch from './PaymentMethodSwitch';
 import OrderSummary from './OrderSummary';
-import BlankModal from '../BlankModal';
 import StickyModalHeader from '../StickyModalHeader';
 import FlexContainer from '../FlexContainer';
 import FullHeightContainer from '../FullHeightContainer';
-import { useState } from 'react';
 import { fakeTimer } from '@/utils/helper';
 import { useModal } from '@/hooks/useModal';
 import { TAddOrder, addOrder } from '@/service/order';
 import { useAuth } from '@/hooks/useAuth';
 import { useUserAddress } from '@/hooks/useUserAddress';
-import { useNavigate } from 'react-router-dom';
-import ConfirmDialog from '@/components/shared/dialog/ConfirmDialog';
 
 interface CheckoutModalProps {
   show: boolean;
@@ -112,7 +112,7 @@ export default function CheckoutModal({ show, onClose }: CheckoutModalProps) {
 
   return (
     <>
-      <BlankModal show={show} onClose={() => {}} fullScreen>
+      <BaseModal show={show} onClose={() => {}} fullScreen>
         <FlexContainer>
           <StickyModalHeader title="Checkout Order" onClose={onClose} />
           <FullHeightContainer>
@@ -129,7 +129,7 @@ export default function CheckoutModal({ show, onClose }: CheckoutModalProps) {
           <Footer onOrderClick={handleOrderClick} />
         </FlexContainer>
         <PageLoading show={loading} />
-      </BlankModal>
+      </BaseModal>
       <ConfirmDialog
         show={showLoginCD}
         title="Account Required"
