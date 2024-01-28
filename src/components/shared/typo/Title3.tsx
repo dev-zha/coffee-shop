@@ -1,12 +1,9 @@
 import { classNames } from '@/utils/helper';
+import { TitleProps } from './type';
 
-interface Title3Props {
-  children: string;
-  className?: string;
-}
-export default function Title3({ children, className }: Title3Props) {
+export default function Title3({ children, className }: TitleProps) {
   return (
-    <h3 className={classNames('text-gray-800 text-xl font-bold', className)}>
+    <h3 className={classNames('text-xl font-semibold', className)}>
       {children}
     </h3>
   );

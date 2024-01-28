@@ -1,17 +1,9 @@
 import { classNames } from '@/utils/helper';
+import { TitleProps } from './type';
 
-interface Title6Props {
-  children: string;
-  className?: string;
-}
-export default function Title6({ children, className }: Title6Props) {
+export default function Title6({ children, className }: TitleProps) {
   return (
-    <h6
-      className={classNames(
-        'text-base font-semibold text-neutral-800',
-        className
-      )}
-    >
+    <h6 className={classNames('text-base font-semibold', className)}>
       {children}
     </h6>
   );
