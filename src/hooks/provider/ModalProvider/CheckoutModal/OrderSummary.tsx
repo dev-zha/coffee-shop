@@ -11,7 +11,7 @@ export default function OrderSummary() {
     <div>
       <Title6>Order Summary</Title6>
       <table className="w-full mt-2">
-        <tbody>
+        <tbody className='space-y-2'>
           {items?.map((item) => (
             <tr
               key={item.product.id}

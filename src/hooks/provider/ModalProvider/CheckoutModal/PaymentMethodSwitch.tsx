@@ -21,16 +21,16 @@ export default function PaymentMethodSwitch() {
               className={({ active, checked }) =>
                 classNames(
                   'flex p-2 border rounded-xl focus:outline-none cursor-pointer',
-                  active ? 'ring-2 ring-primary-200' : '',
+                  active ? 'focus:ring-2 focus:ring-primary-200' : '',
                   checked
-                    ? 'bg-primary text-white font-semibold border-primary'
+                    ? 'bg-primary-100 text-primary font-semibold border-primary'
                     : 'bg-white text-gray-600 border-gray-300'
                 )
               }
             >
               <div className="flex w-full items-center justify-between">
                 <RadioGroup.Label as="p">{pm.label}</RadioGroup.Label>
-                <img src={pm.icon} alt={pm.label} className="w-8 h-8" />
+                <img src={pm.icon} alt={pm.label} className="w-8 h-8 bg-gray-300 rounded" />
               </div>
             </RadioGroup.Option>
           ))}

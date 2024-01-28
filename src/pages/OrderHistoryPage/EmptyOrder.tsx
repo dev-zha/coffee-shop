@@ -17,7 +17,7 @@ export default function EmptyOrder() {
     <div className="h-full flex flex-col justify-center items-center text-center">
       <img
         src="/images/empty-folder.png"
-        className="w-1/2"
+        className="w-1/2 md:w-1/3"
         alt="Empty Folder"
       />
       <h3 className="text-primary-800/80 text-2xl font-bold mb-4">
