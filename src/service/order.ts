@@ -40,6 +40,16 @@ export function getOrderById(id: string): DeliveryOrder | null {
   }
 }
 
+export function getOrderCount(): number {
+  try {
+    const orders = getOrderList();
+    return orders?.length || 0;
+  } catch (err) {
+    console.log('Error:: getOrderCount :', err);
+    return 0;
+  }
+}
+
 const shortRandomUUID = (): string => {
   const uuid = uuidv4();
   return uuid.split('-').join('').substring(0, 8);
