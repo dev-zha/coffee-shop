@@ -67,7 +67,6 @@ const ShoppingCartProvider: React.FC<ShoppingCartProviderProps> = ({
 
   const clearCart = useCallback(() => {
     setItems([]);
-    setDeliOption(DeliOption.DELIVER);
   }, []);
 
   const value = useMemo(

@@ -37,6 +37,7 @@ export default function CheckoutModal({ show, onClose }: CheckoutModalProps) {
     deliOption,
     totalPayment,
     paymentMethod,
+    clearCart,
   } = useShoppingCart();
   // Modal Provider
   const { closeCartModal, showOrderStatusModal, showAddressModal } = useModal();
@@ -84,8 +85,11 @@ export default function CheckoutModal({ show, onClose }: CheckoutModalProps) {
     setLoading(true);
     await fakeTimer(2000);
     const newOrder = getOrderData();
+
     const res = addOrder(newOrder);
     setLoading(false);
+    // Clear Cart Data
+    clearCart();
     // Close Cart and Checkout Modal
     onClose();
     closeCartModal();
